@@ -2,12 +2,13 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - pip3 install --upgrade awscli
       - echo "entered the pre-build phase"
+      - pip3 install --upgrade awscli
+
   build:
     commands:
       - echo "entered the build phase"
-      - maven clean prepare-package war:explode
+      - mvn clean prepare-package war:explode
   post_build:
     commands:
       - echo "entered the post build phase"
