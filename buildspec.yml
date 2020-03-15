@@ -2,7 +2,7 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - pip install --upgrade awscli
+      - pip3 install --upgrade awscli
       - echo "entered the pre-build phase"
   build:
     commands:
